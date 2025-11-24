@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  coolify-test:
+    image: ${DOCKER_REGISTRY-}coolifytest
+    build:
+      context: .
+      dockerfile: Dockerfile
